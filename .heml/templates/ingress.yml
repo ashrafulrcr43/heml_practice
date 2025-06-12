@@ -10,7 +10,7 @@ spec:
   tls:
     - hosts:
         - k8s-ashraful.rfft.nl
-      secretName: {{.values.appName}}-cert
+      secretName: {{.Values.appName}}-cert
   rules:
     - host: k8s-ashraful.rfft.nl
       http:
@@ -19,6 +19,6 @@ spec:
             path: /
             backend:
               service:
-                name: {{.values.appName}}-service
+                name: {{.Values.appName}}-service
                 port:
-                  number: {{.values.servicePort}}
+                  number: {{.Values.servicePort}}
