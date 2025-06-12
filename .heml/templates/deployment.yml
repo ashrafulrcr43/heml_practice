@@ -1,26 +1,26 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{.values.appName}}
-  namespace: {{.values.nameOverride}}
+  name: {{.Values.appName}}
+  namespace: {{.Values.nameOverride}}
   labels:
-    app: {{.values.appName}}
+    app: {{.Values.appName}}
 spec:
-  replicas: {{.values.replicaNumber}}
+  replicas: {{.Values.replicaNumber}}
   selector:
     matchLabels:
-      app: {{.values.appName}}
+      app: {{.Values.appName}}
   template:
     metadata:
-      name: {{.values.appName}}
+      name: {{.Values.appName}}
       labels:
-        app: {{.values.appName}}
+        app: {{.Values.appName}}
     spec:
       containers:
-        - name: {{.values.appName}}
-          image: {{.values.image.repository}}:{{.values.image.tag}}
+        - name: {{.Values.appName}}
+          image: {{.Values.image.repository}}:{{.Values.image.tag}}
           imagePullPolicy: Always
           ports:
-            - containerPort: {{.values.containerPort}}
+            - containerPort: {{.Values.containerPort}}
               protocol: TCP
       restartPolicy: Always
