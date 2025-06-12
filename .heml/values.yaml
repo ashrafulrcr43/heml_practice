@@ -27,7 +27,7 @@
 
  env:
   SECRET_KEY: "hello_world"
-  SOCIAL_AUTH_GOOGLE_OAUTH2_KEY: "your-google-oauth2-key-here"
+  SOCIAL_AUTH_GOOGLE_OAUTH2_KEY: "776969788616-f4d7v9porfn30v1n52u2vlohi5s6kbvv.apps.googleusercontent.com"
 
 # # This section builds out the service account more information can be found here: https://kubernetes.io/docs/concepts/security/service-accounts/
 # serviceAccount:
