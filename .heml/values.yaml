@@ -24,7 +24,10 @@
  replicaNumber: 1
  containerPort: 8000
  servicePort: 8000
- secretKey: "hello_world"
+
+ env:
+  SECRET_KEY: "hello_world"
+  SOCIAL_AUTH_GOOGLE_OAUTH2_KEY: "your-google-oauth2-key-here"
 
 # # This section builds out the service account more information can be found here: https://kubernetes.io/docs/concepts/security/service-accounts/
 # serviceAccount:
