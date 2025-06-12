@@ -22,7 +22,7 @@
  fullnameOverride: ashraful
  appName: k8s-class
  replicaNumber: 1
- containerPort: 3000
+ containerPort: 80
  servicePort: 8000
 
 # # This section builds out the service account more information can be found here: https://kubernetes.io/docs/concepts/security/service-accounts/
