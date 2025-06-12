@@ -8,7 +8,7 @@
 # # This sets the container image more information can be found here: https://kubernetes.io/docs/concepts/containers/images/
  image:
   # repository: rafaftahsin/ostad-app:v2
-  repository: nginx
+  repository: ashraful90/rapidcompetitions
 
 #   # This sets the pull policy for images.
   pullPolicy: IfNotPresent
@@ -22,7 +22,7 @@
  fullnameOverride: ashraful
  appName: k8s-class
  replicaNumber: 1
- containerPort: 80
+ containerPort: 8000
  servicePort: 8000
 
 # # This section builds out the service account more information can be found here: https://kubernetes.io/docs/concepts/security/service-accounts/
