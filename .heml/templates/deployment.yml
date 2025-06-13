@@ -27,4 +27,6 @@ spec:
               value: {{ .Values.secretKey | quote }}
             - name: SOCIAL_AUTH_GOOGLE_OAUTH2_KEY
               value: {{ .Values.socialAuthGoogleOauth2Key | quote }}
+            - name: SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET
+              value: {{ .Values.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 | quote }}
       restartPolicy: Always
